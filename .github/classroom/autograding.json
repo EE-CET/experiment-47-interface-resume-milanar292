@@ -1,0 +1,34 @@
+{
+  "tests": [
+    {
+      "name": "Example 1",
+      "setup": "javac src/InterfaceResume.java",
+      "run": "java -cp src InterfaceResume",
+      "input": "Mary\nMTech\n5",
+      "output": "Name: Mary\nQualification: MTech\nExperience: 5 years",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 34
+    },
+    {
+      "name": "Single Word Input",
+      "setup": "javac src/InterfaceResume.java",
+      "run": "java -cp src InterfaceResume",
+      "input": "John\nPhD\n10",
+      "output": "Name: John\nQualification: PhD\nExperience: 10 years",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 33
+    },
+    {
+      "name": "Zero Experience",
+      "setup": "javac src/InterfaceResume.java",
+      "run": "java -cp src InterfaceResume",
+      "input": "Fresher\nBTech\n0",
+      "output": "Name: Fresher\nQualification: BTech\nExperience: 0 years",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 33
+    }
+  ]
+}
